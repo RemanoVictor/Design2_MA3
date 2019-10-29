@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> Design System of HomeFair.no</title>
+
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/hamburgers.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/prism.css">
+
+</head>
+
+<body>
+
+    <header>
+        
+            <nav class="[ page-nav ] [ main-nav ]">
+                <ul class="[ page-nav-ul ]">
+                    <li><a href="#Texture"> Textures</a></li>
+                    <li><a href="#Text"> Text Hierarchy</a></li>
+                    <li><a href="#Links">Menu & Links</a></li>
+                    <li><a href="#Buttons">Buttons</a></li>
+                    <li><a href="#Form">Form Fields</a></li>
+                    <li><a href="#Logo">Logo</a></li>
+                    <li><a href="#Colours"> Colour Schemes</a></li>
+                    <li><a href="gallery.html"> Gallery </a> </li>
+                </ul>
+            </nav>
+
+            <nav class="[ page-nav ] [ ham-nav ]">
+                <button class="[ hamburger ][ hamburger--3dx ]" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <ul class="[ dropContent ] [ is-active ]" style="display: none;">
+                    <li><a href="#Texture">Textures</a></li>
+                    <li><a href="#Text">Text Hierarchy</a></li>
+                    <li><a href="#Links">Menu & Links</a></li>
+                    <li><a href="#Buttons">Buttons</a></li>
+                    <li><a href="#Form">Form Fields</a></li>
+                    <li><a href="#Logo">Logo</a></li>
+                    <li><a href="#Colours">Colour Schemes</a></li>
+                    <li><a href="gallery.html"> Gallery </a> </li>
+                </ul>
+            </nav>
+
+    </header>
+
+
+    <main>
+        <article>
+            <h1 class="[ pageTitle ]">Design System of remanovictor.com</h1>
+
+            <div class="[ grid_columns ] [ sections ]" id="Texture">
+
+                <section>
+
+                    <h2 class="[ title ]"> Textures:</h2>
+
+                    <figure class="[ ds-square-background-color ]" role="img" aria-labelledby="green-square"
+                        alt="cross & cube background texture">
+                    </figure>
+
+
+                    <figcaption class="[ ds-descr-txt ]">
+
+                        <p>The above figure displays an example of a texture that can be used as a background on a
+                            website.
+                            The texture is in svg format which allows for endless scaling without compromising on
+                            quality.
+                            The figure is comprised of a square in the centre of 4 other squares. The figure plays on
+                            the
+                            Ges talt principle of closure.</p>
+
+
+                    </figcaption>
+                </section>
+
+                <section>
+
+                    <pre><code class="[ language-css ]">
+
+
+
+                </code>
+                </pre>
+                </section>
+            </div>
+
+
+            <div class="[ grid_columns ] [ sections ]" id="Text">
+
+
+
+                <section>
+                    <h2 class="[ title ]"> Typography:</h2>
+                    <h1 class="[ ds-primary-title ]" aria-labelledby="Website title"> I am the main heading (h1) </h1>
+                    <u>
+                        <h2 class="[ ds-secondary-title ]" aria-labelledby="Page title"> I am a sub-heading (h2) </h2>
+                    </u>
+                    <h3 class="[ ds-terciary-title ]" aria-labelledby="Paragraph title"> I am a paragraph title (h3)
+                    </h3>
+                    <p> I am just a plain 'ol paragraph. (p)</p>
+
+
+                    <p class="[ ds-descr-txt ]">The main page title is displayed in a thin font named Raleway.
+                        The font is san-serif which contributes to readability regardles off the font weight.
+                    </p>
+                </section>
+
+                <section>
+
+                    <pre><code class="language-css">
+
+    
+                        
+
+                </code>
+                </pre>
+                </section>
+
+
+
+            </div>
+
+            <div class="[ grid_columns ] [ sections ]" id="Links">
+                <section>
+                    <h2 class="[ title ]"> Navigation and Links: </h2>
+                    <div class="[ grid_columns ]">
+                        <section>
+                            <nav class="[ ds-nav ]" aria-label=" main navigation">
+                                <ul class="[ ds-nav-list ]" aria-label="main navigation list items">
+                                    <li>menu item1</li>
+                                    <li><a href="#"> menu item2</a></li>
+                                    <li>menu item3</li>
+                                </ul>
+                            </nav>
+
+
+                            <nav class="[ ds-nav ]">
+
+                                <button class="[ hamburger ][ hamburger--3dx ]" id="hammy" type="button"
+                                    aria-label="Hamburger menu">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+
+
+                            </nav>
+                        </section>
+                    </div>
+
+                    <p class="[ ds-descr-txt ]"> The nav displays an elegant design that has a good contrast.
+                        On hover, the links change to a orangered color which still stands out against the dark
+                        background
+                        providing good visibility.</p>
+                </section>
+
+                <section>
+
+                    <pre><code class="[ language-css ]">
+
+    
+               
+                        
+                        
+                </code>
+                </pre>
+                </section>
+
+            </div>
+
+            <div class="[ grid_columns ] [ sections ]" id="Buttons">
+
+                <section>
+                    <h2 class="[ title ]"> Buttons: </h2>
+
+                    <button class="[ ds-btn-pr ]" aria-label="button"> Click Me </button>
+                    </br>
+                    </br>
+
+                    <p class="[ ds-descr-txt ]"> The Buttons are simple in design.
+                        The corners are slightly rounded to give a less sharp or hostile feel.
+                    </p>
+                </section>
+
+                <section>
+
+                    <pre><code class="[ language-css ]">
+
+    
+                                  
+                </code>
+                </pre>
+                </section>
+
+            </div>
+
+            <div class="[ grid_columns ] [ sections ]" id="Form">
+
+                <section>
+                    <h2 class="[ title ]"> Form Field: </h2>
+                    <form class="[ ds-form ]" aria-label="form">
+                        <span>Name:</span>
+                        <br>
+                        <input type="text" class="[ ds-nameInput ]" aria-label="name input"> </br></br>
+                        <span>Email:</span>
+                        <br>
+                        <input type="email" class="[ ds-mailInput ]" aria-label="email input"></br></br>
+                        <span>Number:</span>
+                        <br>
+                        <input type="number" class="[ ds-numberInput ]" aria-label="number input"> </br></br>
+                        <span>Enter Your Comment:</span></br></br>
+                        <textarea></textarea>
+                    </form>
+                    <button class="[ ds-btn-pr ]" aria-label="submit button"> Click Me </button>
+
+                    <p class="[ ds-descr-txt ]"> The form has a dark background with a light text making visibility and
+                        readability not issue at all. </p>
+                </section>
+
+                <section>
+
+                    <pre><code class="[ language-css ]">
+    
+                  
+
+                </code>
+                </pre>
+                </section>
+            </div>
+
+
+            <div class="[ grid_columns ] [ sections ]" id="Logo">
+
+                <section>
+                    <h2 class="[ title ]"> Logo: </h2>
+
+
+                    
+
+
+
+                    <figcaption class="[ ds-descr-txt ]">
+                        <p> The logo is placed on a dark background. It is my name and surname as well as what I do for
+                            a
+                            living.
+                            The logo displays a feeling of professionalism but keeps an aspect of fun with the " i " as
+                            an
+                            accent colour.
+                        </p>
+                    </figcaption>
+
+                </section>
+
+
+                <section>
+
+                    <pre><code class="[ language-css ]">
+
+
+   
+
+            </code>
+            </pre>
+                </section>
+
+
+            </div>
+
+            <div class="[ grid_columns ] [ sections ]" id="Colours">
+                <section>
+                    <h2 class="[ title ]" aria-label="colour scheme"> Colour Scheme </h2>
+
+                    <p> The page uses 3 colours as main colours. namely:
+                    </p>
+                    <br>
+                    <br>
+                    <p> gba(255, 255, 255, 0.7) </p>
+                    <br>
+                    <div class="[ white ]"></div>
+                    <p> This colour is used mainly for links </p>
+                    <br>
+                    <br>
+                    <p> rgb(000,000,000) </p>
+                    <br>
+                    <div class="[ black ]"></div>
+                    <p> This colour is used for the main body background colour as well as for the nav</p>
+                    <br>
+                    <br>
+                    <p> rgb(233, 233, 233)</p>
+                    <br>
+                    <div class="[ cream ]"></div>
+                    <p> This can be used as a sectional seperator background within the page</p>
+
+                    <p class="[ ds-descr-txt ]"> The colours compliment each other by blending and stil having a
+                        contrast
+                        ratio of 4.7:1
+                        if placing gold on black. the ratio is poor when placing gold on the the cream however. </p>
+                </section>
+
+                <section>
+                    <pre>
+                        <code class="[ language-css ]">
+    
+    
+    
+    
+                        </code>
+                    </pre>
+                </section>
+
+            </div>
+
+        </article>
+
+    </main>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/prism.js"></script>
+</body>
+
+</html>
