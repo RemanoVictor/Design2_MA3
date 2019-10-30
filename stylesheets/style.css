@@ -61,6 +61,14 @@ pre{
 }
 
 
+/*color scheme */
+
+.test{
+    height: 50px;
+    width: 50px;
+    background: #3a45fc;
+}
+
 @media screen and (max-width: 800px)
 {
     .grid_columns{
