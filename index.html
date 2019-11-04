@@ -14,6 +14,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="media/favicon_package_v0.16 (2)/favicon-16x16.png">
     <link rel="manifest" href="media/favicon_package_v0.16 (2)/site.webmanifest">
     <link rel="mask-icon" href="media/favicon_package_v0.16 (2)/safari-pinned-tab.svg" color="#15a074">
+
+    <!--open graph-->
+    <meta property="og:title" content="homefair.no"/>
+    <meta property="og:type" content="Cutting-edge website to help in the sale of your home"/>
+    <meta property="og:url" content="www.homefair.no"/>
+    <meta property="og:image" content="/media/logos/opengraph.png"/>
     
 
     <title> Design System of HomeFair.no </title>
@@ -28,45 +34,74 @@
 
 <body>
 
-        <header>
-                <nav class="[ page-nav ] [ main-nav ]">
-                    <ul class="[ page-nav-ul ]">
-                        <li><a href="#Texture"> Textures</a></li>
-                        <li><a href="#Text"> Text Hierarchy</a></li>
-                        <li><a href="#Links">Menu & Links</a></li>
-                        <li><a href="#Buttons">Buttons</a></li>
-                        <li><a href="#Form">Form Fields</a></li>
-                        <li><a href="#Logo">Logo</a></li>
-                        <li><a href="#Colours"> Colour Schemes</a></li>
-                        <li><a href="gallery.html"> Gallery </a> </li>
-                    </ul>
-                </nav>
+    <header>
+            <nav class="[ page-nav ] [ main-nav ]">
+                <ul class="[ page-nav-ul ]">
+                    <li><a href="#Personality">Brand Personality</a></li>
+                    <li><a href="#Audience">Target Audience</a></li>
+                    <li><a href="#Texture"> Textures</a></li>
+                    <li><a href="#Text"> Text Hierarchy</a></li>
+                    <li><a href="#Links">Menu & Links</a></li>
+                    <li><a href="#Buttons">Buttons</a></li>
+                    <li><a href="#Form">Form Fields</a></li>
+                    <li><a href="#Logo">Logo</a></li>
+                    <li><a href="#Colours"> Colour Schemes</a></li>
+                    <li><a href="gallery.html"> Gallery </a> </li>
+                </ul>
+            </nav>
 
-                <nav class="[ page-nav ] [ ham-nav ]">
-                    <button class="[ hamburger ][ hamburger--3dx ]" type="button">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span>
-                    </button>
+            <nav class="[ page-nav ] [ ham-nav ]" id="ham-nav">
+                <button class="[ hamburger ][ hamburger--3dx ]" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
 
-                    <ul class="[ dropContent ] [ is-active ]" style="display: none;">
-                        <li><a href="#Texture">Textures</a></li>
-                        <li><a href="#Text">Text Hierarchy</a></li>
-                        <li><a href="#Links">Menu & Links</a></li>
-                        <li><a href="#Buttons">Buttons</a></li>
-                        <li><a href="#Form">Form Fields</a></li>
-                        <li><a href="#Logo">Logo</a></li>
-                        <li><a href="#Colours">Colour Schemes</a></li>
-                        <li><a href="gallery.html"> Gallery </a> </li>
-                    </ul>
-                </nav>
+                <ul class="[ dropContent ] [ is-active ]" style="display: none;">
+                    <li><a href="#Personality">Brand Personality</a></li>
+                    <li><a href="#Audience">Target Audience</a></li>
+                    <li><a href="#Texture">Textures</a></li>
+                    <li><a href="#Text">Text Hierarchy</a></li>
+                    <li><a href="#Links">Menu & Links</a></li>
+                    <li><a href="#Buttons">Buttons</a></li>
+                    <li><a href="#Form">Form Fields</a></li>
+                    <li><a href="#Logo">Logo</a></li>
+                    <li><a href="#Colours">Colour Schemes</a></li>
+                    <li><a href="gallery.html"> Gallery </a> </li>
+                </ul>
+            </nav>
 
-        </header>
+    </header>
     
 
     <main>
         <article class="[ body-text ]">
             <h1 class="[ pageTitle ]">Design System of HomeFair.no</h1>
+
+
+            <div class="[ grid_columns ][ sections ]" id="Personality">
+
+                <section>
+                    <h2 class="[ section-title ]"> Brand Personality </h2>
+
+                    <p> The brand personality of home.no is one that wnats to create ease and efficiency in the real estate market. 
+                        It looks to take away the stress of finding the right realtor whi is able to get you the best price when buying or selling a homestead. 
+                        This is hopefully achieved by using AI which removes the risk of human error.
+                    </p>
+                </section>
+            </div>
+
+            <div class="[ grid_columns ] [ sections ]" id="Audience">
+                <section>
+
+                    <h2 class="[ section-title ]"> Target Audience</h2>
+
+                    <p> The target audience for Home.no would be inviduals who are looking to either buy or sell their apartment or house. 
+                        Understandably it may seem that it appeals more to the younger generation as this relies heavily on technology, but the process is almost seemless and extremely easy to get used to.
+                    </p>
+
+                </section>
+            </div> 
 
             <div class="[ grid_columns ] [ sections ]" id="Texture">
 
@@ -185,7 +220,29 @@
                 <section>
                     <pre>
                         <code class="[ language-css ]">
-                                                           
+                               
+.ds-nav{
+    width:400px;
+    background-color:rgb(28, 28, 68);
+    & li{
+        display:inline-block;
+        margin:10px;
+        color:whitesmoke;
+        & a{
+            color:whitesmoke;
+            &:hover{
+                color:#ffa228;
+            }
+        }
+    }
+}
+
+.ds-nav-ham{
+    background-color: rgb(28, 28, 68);
+    margin-top: 10px;
+    width: 400px;
+}
+
                         </code>
                     </pre>
                 </section>
@@ -256,12 +313,34 @@
 
                 <section>
 
-                    <pre><code class="[ language-css ]">
+                    <pre>
+                        <code class="[ language-css ]">
     
-                  
+.ds-form{
+    padding: 20px;
+    color: #000;
+    border-radius: 5px;
+    background-image:
+    url('/media/logos/house_logo_sml_drk.png');
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 70% 100%;
+    & Input{
+        border: none;
+        border-bottom: 1px solid #000;
+        background-color: transparent;
+        padding: 5px;
+        color: #000;
+        width: 50%;
+    }
+}
 
-                </code>
-                </pre>
+.text-Input{
+    word-wrap: break-word;
+}
+
+                        </code>
+                    </pre>
                 </section>
             </div>
 
@@ -269,17 +348,12 @@
             <div class="[ grid_columns ] [ sections ]" id="Logo">
                 <section>
                     <h2 class="[ section-title ]"> Logo: </h2>
-                        <img src="media/logos/house_logo_dark.png"  srcset="media/logos/house_logo_dark.png 1000w,
+                        <img srcset="media/logos/house_logo_dark.png 1000w,
                                                                             media/logos/house_logo_sml_drk.png 800w,
                                                                             media/logos/house_logo_icon.png 500w">
 
                     <figcaption class="[ ds-descr-txt ]">
-                        <p> The logo is placed on a dark background. It is my name and surname as well as what I do for
-                            a
-                            living.
-                            The logo displays a feeling of professionalism but keeps an aspect of fun with the " i " as
-                            an
-                            accent colour.
+                        <p> The logo has a house that has been shaped by a square. the colours represent the technical aspect referring to the AI while also having a modern feel. 
                         </p>
                     </figcaption>
                 </section>
@@ -287,8 +361,12 @@
 
                 <section>
                     <pre>
-                        <code class="[ language-css ]">
-
+                        <code class="[ language-html ]">
+<xmp>
+        <img srcset="media/logos/house_logo_dark.png 1000w,
+        media/logos/house_logo_sml_drk.png 800w,
+        media/logos/house_logo_icon.png 500w">
+</xmp>
 
    
 
@@ -300,42 +378,71 @@
             <div class="[ grid_columns ] [ sections ]" id="Colours">
                 <section>
                     <h2 class="[ section-title ]" aria-label="colour scheme"> Colour Scheme </h2>
-
-                    <p> The page uses 3 colours as main colours. namely:
                     </p>
                     <br>
                     <br>
-                    <p> rgba(58,69, 252) </p>
-                    <p> #3a45fc</p>
-                    <br>
-                    <div class="[ test ]"></div>
-                    <p> This colour is used mainly for links </p>
                     <br>
                     <br>
-                    <p> rgb(000,000,000) </p>
+                    <p> Royal Blue</p>
+                    <div class="[ royalBlue ]">
+                        <p> #3a45fc </p>
+                    </div>
                     <br>
-                    <div class="[ black ]"></div>
-                    <p> This colour is used for the main body background colour as well as for the nav</p>
                     <br>
                     <br>
-                    <p> rgb(233, 233, 233)</p>
                     <br>
-                    <div class="[ cream ]"></div>
-                    <p> This can be used as a sectional seperator background within the page</p>
+                    <p> Light Sea Green</p>
+                    <div class="[ lightSeaGreen ]">
+                        <p> #33cc99 </p>
+                    </div>                    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p> Golden Rod</p>
+                    <div class="[ goldenRod ]">
+                        <p> #ffa228 </p>
+                    </div>
 
-                    <p class="[ ds-descr-txt ]"> The colours compliment each other by blending and stil having a
-                        contrast
-                        ratio of 4.7:1
-                        if placing gold on black. the ratio is poor when placing gold on the the cream however. </p>
+                    <p class="[ ds-descr-txt ]"> The other main colors will be black and white. The background of the website will be white while the text will be black. the color of the text will alternate depending on the colour scheme of the browser.
+                        The above colours will be used as accent colours and willl bring character the the different pages in the form of icons, hover effects etc. </p>
                 </section>
 
                 <section>
                     <pre>
                         <code class="[ language-css ]">
     
-    
-    
-    
+.royalBlue{
+    background: #3a45fc;
+    height: 100px;
+    width: 300px;
+    border-radius: 10px 0px 10px 0px;
+    text-align: center;
+    padding: 40px;
+    color: white;
+    margin: 10px;
+}
+
+.lightSeaGreen{
+    background-color:#33cc99;
+    height: 100px;
+    width: 300px;
+    border-radius: 0px 10px 0px 10px;
+    text-align: center;
+    padding: 40px;
+    margin: 10px;
+}
+
+.goldenRod{
+    background: #ffa228;
+    height: 100px;
+    width: 300px;
+    border-radius: 10px 0px 10px 0px;
+    text-align: center;
+    padding: 40px;
+    margin: 10px;
+}
+
                         </code>
                     </pre>
                 </section>
@@ -346,6 +453,7 @@
 
     </main>
     <script src="scripts/script.js"></script>
+    <script src="scripts/ds-nav.js"></script>
     <script src="scripts/prism.js"></script>
 </body>
 

@@ -36,7 +36,7 @@ p{
 .page-nav-ul li{
     display: inline;
     text-decoration: none;
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     & a{
         color: #fff;
@@ -54,6 +54,18 @@ p{
 
 .ham-nav{
     display: none;
+    text-decoration: none;
+    & li{
+        list-style-type: none;
+        margin: 2px 0;
+        padding: 5px;
+    }
+    & a{
+        color: #fff;
+        &:hover{
+            color: #ffa228;
+        }
+    }
 }
 
 
@@ -101,6 +113,29 @@ pre{
 
 .ds-descr-txt{
     margin-top: 20px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:2vw;
+    gap:2vw
+}
+
+.gallery_50{
+    grid-template-columns: 1fr 1fr;
+}
+
+.gallery_3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery_6{
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.top-image{
+    margin-top: 100px;
 }
 
 @media screen and (max-width: 800px)

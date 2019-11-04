@@ -36,7 +36,7 @@ p {
 .page-nav-ul li {
   display: inline;
   text-decoration: none;
-  margin: 10px;
+  margin: 5px;
   padding: 10px;
 }
 
@@ -56,6 +56,21 @@ p {
 
 .ham-nav {
   display: none;
+  text-decoration: none;
+}
+
+.ham-nav li {
+  list-style-type: none;
+  margin: 2px 0;
+  padding: 5px;
+}
+
+.ham-nav a {
+  color: #fff;
+}
+
+.ham-nav a:hover {
+  color: #ffa228;
 }
 
 .sections {
@@ -109,6 +124,34 @@ pre {
   margin-top: 20px;
 }
 
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 2vw;
+  gap: 2vw;
+}
+
+.gallery_50 {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.gallery_3 {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery_6 {
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.top-image {
+  margin-top: 100px;
+}
+
 @media screen and (max-width: 800px) {
   .grid_columns {
     display: block;
@@ -123,6 +166,14 @@ pre {
   .pageTitle {
     margin-top: 100px;
   }
+}
+
+#personality {
+  text-align: center;
+}
+
+#audience {
+  text-align: center;
 }
 
 .ds-background-texture {
@@ -211,7 +262,7 @@ pre {
   background-image: url("/media/logos/house_logo_sml_drk.png");
   background-repeat: no-repeat;
   background-size: 30%;
-  background-position: 70% 100%;
+  background-position: 80% 150%;
 }
 
 .ds-form Input {
@@ -227,24 +278,34 @@ pre {
   word-wrap: break-word;
 }
 
-.test {
+.royalBlue {
   background: #3a45fc;
   height: 100px;
   width: 300px;
   border-radius: 10px 0px 10px 0px;
+  text-align: center;
+  padding: 40px;
+  color: white;
+  margin: 10px;
 }
 
-.black {
+.lightSeaGreen {
   background-color: #33cc99;
   height: 100px;
   width: 300px;
   border-radius: 0px 10px 0px 10px;
+  text-align: center;
+  padding: 40px;
+  margin: 10px;
 }
 
-.cream {
+.goldenRod {
   background: #ffa228;
   height: 100px;
   width: 300px;
   border-radius: 10px 0px 10px 0px;
+  text-align: center;
+  padding: 40px;
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */
