@@ -5,8 +5,10 @@
 
 body{
     background-color: rgba(235, 233, 243, 0.9);
-    width: 90%;
-    margin: 0 5%;
+}
+
+img{
+    width: 100%;
 }
 
 .body-text{
@@ -23,11 +25,12 @@ p{
 }
 
 .page-nav{
-    background-color: rgba(0, 4, 255, 0.29);
-    padding: 20px;
+    background-color: rgb(28, 28, 68);
+    top: 0;
+    padding:20px;
+    position: fixed;
     margin-bottom: 20px;
-    border-radius: 5px;
-    text-align: center;
+    width: 100%;
 }
 
 .page-nav-ul li{
@@ -37,6 +40,9 @@ p{
     padding: 10px;
     & a{
         color: #fff;
+        &:hover{
+            color: orangered;
+        }
     }
 }
 
@@ -96,6 +102,10 @@ pre{
     height: 50px;
     width: 50px;
     background: #3a45fc;
+}
+
+.ds-descr-txt{
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 800px)

@@ -1,0 +1,14 @@
+.ds-form{
+    background-color: rgba(00,00,00,0.5);
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    & Input{
+        border: none;
+        border-bottom: 1px solid white;
+        background-color: transparent;
+        padding: 5px;
+        color: white;
+    }
+}
+

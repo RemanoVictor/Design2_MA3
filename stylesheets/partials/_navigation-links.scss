@@ -1,16 +1,19 @@
 .ds-nav{
     width: 500px;
-    background-color: rgba(0, 4, 255, 0.29);
+    background-color: rgb(28, 28, 68);
     & li{
         color: whitesmoke;
         & a{
             color: whitesmoke;
+            &:hover{
+                color: orangered;
+            }
         }
     }
 }
 
 .ds-nav-ham{
-    background-color: rgba(0, 4, 255, 0.29);
+    background-color: rgb(28, 28, 68);
     margin-top: 10px;
     width: 500px;
 }
