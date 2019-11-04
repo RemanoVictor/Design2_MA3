@@ -1,12 +1,14 @@
 .ds-nav{
-    width: 500px;
-    background-color: rgb(28, 28, 68);
+    width:400px;
+    background-color:rgb(28, 28, 68);
     & li{
-        color: whitesmoke;
+        display:inline-block;
+        margin:10px;
+        color:whitesmoke;
         & a{
-            color: whitesmoke;
+            color:whitesmoke;
             &:hover{
-                color: orangered;
+                color:#ffa228;
             }
         }
     }
@@ -15,10 +17,5 @@
 .ds-nav-ham{
     background-color: rgb(28, 28, 68);
     margin-top: 10px;
-    width: 500px;
-}
-
-.ds-nav-list li{
-    display: inline-block;
-    margin: 10px;
+    width: 400px;
 }

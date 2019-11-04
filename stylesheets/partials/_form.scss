@@ -1,14 +1,22 @@
 .ds-form{
-    background-color: rgba(00,00,00,0.5);
     padding: 20px;
-    color: white;
+    color: #000;
     border-radius: 5px;
+    background-image: url('/media/logos/house_logo_sml_drk.png');
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 70% 100%;
     & Input{
         border: none;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid #000;
         background-color: transparent;
         padding: 5px;
-        color: white;
+        color: #000;
+        width: 50%;
     }
+}
+
+.text-Input{
+    word-wrap: break-word;
 }
 

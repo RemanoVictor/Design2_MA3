@@ -45,7 +45,7 @@ p {
 }
 
 .page-nav-ul li a:hover {
-  color: orangered;
+  color: #ffa228;
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
@@ -87,6 +87,7 @@ pre {
   line-height: 1.5rem;
   overflow: scroll;
   height: 395px;
+  width: 100%;
   border-top: solid 3px #dadada;
   -webkit-box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.7);
           box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.7);
@@ -102,12 +103,6 @@ pre {
 .section-title {
   padding: 10px;
   margin: 10px 0px;
-}
-
-.test {
-  height: 50px;
-  width: 50px;
-  background: #3a45fc;
 }
 
 .ds-descr-txt {
@@ -139,8 +134,7 @@ pre {
           box-shadow: 0 7px 15px rgba(0, 0, 0, 0.6);
   border-bottom: solid 3px rgba(255, 255, 255, 0.6);
   margin-top: 5em;
-  background: url(""), center top repeat;
-  background-color: black;
+  background: url("/media/textures/background-texture.svg"), center top repeat;
 }
 
 .ds-primary-title {
@@ -164,11 +158,13 @@ pre {
 }
 
 .ds-nav {
-  width: 500px;
+  width: 400px;
   background-color: #1c1c44;
 }
 
 .ds-nav li {
+  display: inline-block;
+  margin: 10px;
   color: whitesmoke;
 }
 
@@ -177,52 +173,78 @@ pre {
 }
 
 .ds-nav li a:hover {
-  color: orangered;
+  color: #ffa228;
 }
 
 .ds-nav-ham {
   background-color: #1c1c44;
   margin-top: 10px;
-  width: 500px;
-}
-
-.ds-nav-list li {
-  display: inline-block;
-  margin: 10px;
+  width: 400px;
 }
 
 .ds-btn-pr {
-  background-color: blueviolet;
+  background-color: #3a45fc;
   padding: 20px;
   border-radius: 5px;
   width: 30%;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  font-size: 1em;
   font-family: 'nunito',sans-serif;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   margin-top: 10px;
+  color: white;
 }
 
 .ds-btn-pr:hover {
-  background-color: red;
-  color: white;
+  background-color: #33cc99;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  color: black;
 }
 
 .ds-form {
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  color: white;
+  color: #000;
   border-radius: 5px;
+  background-image: url("/media/logos/house_logo_sml_drk.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 70% 100%;
 }
 
 .ds-form Input {
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #000;
   background-color: transparent;
   padding: 5px;
-  color: white;
+  color: #000;
+  width: 50%;
+}
+
+.text-Input {
+  word-wrap: break-word;
+}
+
+.test {
+  background: #3a45fc;
+  height: 100px;
+  width: 300px;
+  border-radius: 10px 0px 10px 0px;
+}
+
+.black {
+  background-color: #33cc99;
+  height: 100px;
+  width: 300px;
+  border-radius: 0px 10px 0px 10px;
+}
+
+.cream {
+  background: #ffa228;
+  height: 100px;
+  width: 300px;
+  border-radius: 10px 0px 10px 0px;
 }
 /*# sourceMappingURL=style.css.map */

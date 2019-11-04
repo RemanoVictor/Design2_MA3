@@ -1,19 +1,21 @@
 .ds-btn-pr{
-    background-color: blueviolet;
+    background-color: #3a45fc;
     padding: 20px;
     border-radius: 5px;
     width: 30%;
     box-shadow: 0 5px 10px rgba(0,0,0, 0.5);
+    font-size: 1em;
     font-family: 'nunito',sans-serif;
     transition: all .3s ease-in-out;
     margin-top: 10px;
+    color: white;
     
 }
 
 .ds-btn-pr:hover{
-        background-color: red;
-        color: white;
+        background-color:#33cc99;
         transform: scale(1.1);
+        color: black;
 }
 
 

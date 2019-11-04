@@ -81,13 +81,7 @@
 
                     <figcaption class="[ ds-descr-txt ]">
 
-                        <p>The above figure displays an example of a texture that can be used as a background on a
-                            website.
-                            The texture is in svg format which allows for endless scaling without compromising on
-                            quality.
-                            The figure is comprised of a square in the centre of 4 other squares. The figure plays on
-                            the
-                            Ges talt principle of closure.</p>
+                        <p>The texture above is subtle and non intrusive. it is best used in small doses or to cover smaller areas on the page. An exmaple can be to decorate a jumbotron displaying information on the main page</p>
 
                     </figcaption>
                 </section>
@@ -96,7 +90,11 @@
                     <pre>
                         <code class="[ language-css ]">
 
+    background: 
+    url('/media/textures/background-texture.svg'),
+    center top repeat;
 
+    }
 
                         </code>
                     </pre>
@@ -116,8 +114,11 @@
                     <p class="[ ds-paragraph-text ]"> I am just a plain 'ol paragraph. (p)</p>
 
 
-                    <p class="[ ds-descr-txt ]">The main page title is displayed in a thin font named Raleway.
-                        The font is san-serif which contributes to readability regardles off the font weight.
+                    <p class="[ ds-descr-txt ]"> 
+
+                        The typography chosen for the website has a simple yet professional. it almost seemlessly blends the serif typeface of sub titles and paragraph headings with the san serif typeface of the main title and the paragraph text. 
+                        For the Serif font I am using the default type face of Times New Roman. while the the main title has the Bariole-regular fontface. The paragraph text has the Nunito fontface.
+
                     </p>
                 </section>
 
@@ -125,9 +126,28 @@
                     <pre>
                         <code class="language-css">
 
-    
-                        
+.ds-primary-title{
+    font-family: 'bariol-regular',
+    sans-serif;
+    font-size: 2.5em;
+}
 
+.ds-secondary-title{
+    margin: 10px 0;
+    font-size: 2em;
+}
+
+.ds-terciary-title{
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.ds-paragraph-text{
+    margin: 10px 0;
+    font-family: 'nunito',
+    sans-serif;
+}
+                        
                         </code>
                     </pre>
                 </section>
@@ -139,7 +159,7 @@
                     <div class="[ grid_columns ]">
                         <section>
                             <div class="[ ds-nav ]" aria-label=" main navigation">
-                                <ul class="[ ds-nav-list ]" aria-label="main navigation list items">
+                                <ul aria-label="main navigation list items">
                                     <li>menu item1</li>
                                     <li><a href="#"> menu item2</a></li>
                                     <li>menu item3</li>
@@ -157,20 +177,15 @@
                         </section>
                     </div>
 
-                    <p class="[ ds-descr-txt ]"> The nav displays an elegant design that has a good contrast.
-                        On hover, the links change to a orangered color which still stands out against the dark
-                        background
-                        providing good visibility.</p>
+                    <p class="[ ds-descr-txt ]"> The nav boasts a simple design and colour scheme that sits well with the rest of the website. 
+                        the contrast is near perfect meaning that readability is not going to be an issue. The orange is used as a notifier hover effect to let the user know which link will be selected.
+                    </p>
                 </section>
 
                 <section>
                     <pre>
                         <code class="[ language-css ]">
-
-    
-               
-                        
-                        
+                                                           
                         </code>
                     </pre>
                 </section>
@@ -183,8 +198,7 @@
                     </br>
                     </br>
 
-                    <p class="[ ds-descr-txt ]"> The Buttons are simple in design.
-                        The corners are slightly rounded to give a less sharp or hostile feel.
+                    <p class="[ ds-descr-txt ]"> The buttons are easily distinguishable from the rest of the page. I have given them a box shadow to lift them off the page. They also have a hover effect to let users know that they have been interacted with. The green color will hopefully encourage users to trust the action attached to the button.
                     </p>
                 </section>
 
@@ -192,7 +206,25 @@
                     <pre>
                         <code class="[ language-css ]">
 
+.ds-btn-pr{
+    background-color: #3a45fc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.5);
+    font-size: 1em;
+    font-family: 'nunito',sans-serif;
+    transition: all .3s ease-in-out;
+    margin-top: 10px;
+    color: white;
     
+}
+
+.ds-btn-pr:hover{
+        background-color:#33cc99;
+        transform: scale(1.1);
+        color: black;
+}
                                   
                         </code>
                     </pre>
@@ -214,7 +246,7 @@
                         <br>
                         <input type="number" class="[ ds-numberInput ]" aria-label="number input"> </br></br>
                         <span>Enter Your Comment:</span></br></br>
-                        <textarea></textarea>
+                        <input type="text" class="[ ds-textInput ]">
                     </form>
                     <button class="[ ds-btn-pr ]" aria-label="submit button"> Click Me </button>
 
@@ -235,14 +267,11 @@
 
 
             <div class="[ grid_columns ] [ sections ]" id="Logo">
-
                 <section>
                     <h2 class="[ section-title ]"> Logo: </h2>
-
-<img src="media/logos/house_logo_dark.png"  srcset="media/logos/house_logo_dark.png 1000w,
-                                                    media/logos/house_logo_sml_drk.png 800w,
-                                                    media/logos/house_logo_icon.png 500w ">
-
+                        <img src="media/logos/house_logo_dark.png"  srcset="media/logos/house_logo_dark.png 1000w,
+                                                                            media/logos/house_logo_sml_drk.png 800w,
+                                                                            media/logos/house_logo_icon.png 500w">
 
                     <figcaption class="[ ds-descr-txt ]">
                         <p> The logo is placed on a dark background. It is my name and surname as well as what I do for
@@ -253,22 +282,19 @@
                             accent colour.
                         </p>
                     </figcaption>
-
                 </section>
 
 
                 <section>
-
-                    <pre><code class="[ language-css ]">
+                    <pre>
+                        <code class="[ language-css ]">
 
 
    
 
-            </code>
-            </pre>
+                        </code>
+                    </pre>
                 </section>
-
-
             </div>
 
             <div class="[ grid_columns ] [ sections ]" id="Colours">
